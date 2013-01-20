@@ -6,16 +6,16 @@ This is an extended exmaple of how Realtime Dashboard can be made using [SocketS
 
 ### Setup guide
 
-To run the dashboard you need to execute `npm install` and copy/rename `config.sample.js` to `config.js`.
-
-If you want to use a MongoDB store for the sessions you must uncomment `ss.api.add('db', require('./server/db')(config.db));` in `app.js` file and install `"mongodb": "=1.0.2", "mongoose": "=3.4.0", "connect-mongo": "=0.2.0"` also set `session.store.use="mongo"` in the `config.js`. The configuration for the MongoDB is set in the `db` section of the the `config.js` file.
-
-To access the dashboard you must specify an access (API) key stored in `acl.xml`.
+1. To run the dashboard you need to execute `npm install` and copy/rename `config.sample.js` to `config.js`. 
+  * If you want to use a MongoDB store for the sessions you must uncomment `ss.api.add('db', require('./server/db')(config.db));` in `app.js` file and install `"mongodb": "=1.0.2", "mongoose": "=3.4.0", "connect-mongo": "=0.2.0"` also set `session.store.use="mongo"` in the `config.js`. The configuration for the MongoDB is set in the `db` section of the the `config.js` file.
+2. `node app.js`. This will run the application in production mode.
+  * Use `APP_ENV=development` environment variable to start it in development mode.
+3. To access the dashboard you must specify an access (API) key stored in `acl.xml`.
 
 Example:
 
     `http://localhost:8400/?apikey=49DBFA41BC738D2332F3D4560BAB1A89`
-
+---
 For the purpose of embeding this dashboard into a web app with an iframe (modern browsers only):
 
 ```html
