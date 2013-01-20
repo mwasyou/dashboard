@@ -26,6 +26,7 @@ var
     path = require('path');
 
 ss.api.add('utils', require('./utils'));
+//ss.api.add('db', require('./server/db')(config.db));
 ss.api.add('acl', require('./server/acl')(config.acl));
 ss.api.add('modules', require('./server/modules'));
 
