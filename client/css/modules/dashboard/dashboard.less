@@ -1,0 +1,198 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    /*-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);*/
+}
+::-webkit-scrollbar-thumb {
+    background: #e4e4e4;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #aaa;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.column {
+  background-color: darken(#FFFFFF, 0.5);
+  float: left;
+}
+
+.columns-1 .column {
+  width: 100%;
+}
+
+.columns-2 .column {
+  width: 49.5%;
+}
+
+.columns-2 .col-2,
+.columns-2 .col-3,
+.columns-2 .col-4 {
+  float: right;
+  width: 50.5%;
+}
+
+.columns-3 .column {
+  width: 33.5%;
+}
+
+.columns-3 .col-1 {
+  width: 33%;
+}
+
+.columns-3 .col-3,
+.columns-3 .col-4 {
+  float: right;
+}
+
+.columns-4 .column {
+  width: 25%;
+}
+
+.meta-box-sortables {
+  margin: 0 4px;
+}
+
+.column .meta-box-sortables {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 3px;
+}
+
+.metabox-holder {
+  padding: 4px;
+}
+
+.metabox-holder .column .empty-container {
+  border-style: dashed;
+  border-color: rgba(204, 204, 204, .7);
+  border-width: 3px;
+  height: 250px;
+}
+
+.columns-1 .column .empty-container,
+.columns-2 .col-3 .empty-container,
+.columns-2 .col-4 .empty-container,
+.columns-3 .col-4 .empty-container {
+  border: 0 none;
+  height: 0;
+  min-height: 0;
+  display: none;
+}
+
+.empty-placeholder {
+  border-color:#bbb;
+  background-color: transparent;
+
+  border-width: 1px;
+  border-style: dashed;
+  margin-bottom: 14px;
+}
+
+.sortable-placeholder {
+  border-color:#bbb;
+  background-color:#f5f5f5;
+
+  border-width: 1px;
+  border-style: dashed;
+  margin-bottom: 14px;
+}
+
+/* Dashboard Widgets section */
+.widget {
+  margin-bottom: 14px;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  line-height: 1;
+  display: block;
+
+  color: #333;
+
+  background-color: #F5F5F5;
+  background-image: -ms-linear-gradient(top,#F9F9F9,whiteSmoke);
+  background-image: -moz-linear-gradient(top,#F9F9F9,whiteSmoke);
+  background-image: -o-linear-gradient(top,#F9F9F9,whiteSmoke);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(whiteSmoke));
+  background-image: -webkit-linear-gradient(top,#F9F9F9,whiteSmoke);
+  background-image: linear-gradient(top,#F9F9F9,whiteSmoke);
+
+  border-color: #DFDFDF;
+  -moz-box-shadow: inset 0 1px 0 #fff;
+  -webkit-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.widget .widget-head {
+  margin-bottom: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  color: #464646;
+
+  border-bottom-color: #DFDFDF;
+  text-shadow: white 0 1px 0;
+  -moz-box-shadow: 0 1px 0 #fff;
+  -webkit-box-shadow: 0 1px 0 white;
+  box-shadow: 0 1px 0 white;
+
+  background-color: #F1F1F1;
+  background-image: -ms-linear-gradient(top,#F9F9F9,#ECECEC);
+  background-image: -moz-linear-gradient(top,#F9F9F9,#ECECEC);
+  background-image: -o-linear-gradient(top,#F9F9F9,#ECECEC);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+  background-image: -webkit-linear-gradient(top,#F9F9F9,#ECECEC);
+  background-image: linear-gradient(top,#F9F9F9,#ECECEC);
+
+  font-size: 15px;
+  font-weight: normal;
+  padding: 7px 10px;
+  margin: 0;
+  line-height: 1;
+
+  margin-top: 1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  cursor: move;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+
+  display: block;
+}
+.widget .widget-head span {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1;
+}
+.widget .widget-content {
+  margin-top: 0;
+  margin: 10px 0;
+  position: relative;
+  padding: 0 10px;
+  line-height: 1.4em;
+  color: #333;
+}
+
+.widget .wico {
+  float: right;
+  width: 27px;
+  height: 30px;
+  cursor: pointer;
+}

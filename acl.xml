@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+  <keys>
+    <key>
+      <role>administrator</role>
+      <user>admin</user>
+      <hash>49DBFA41BC738D2332F3D4560BAB1A89</hash>
+    </key>
+    <key>
+      <role>super_user</role>
+      <user>superuser</user>
+      <hash>AF855F3FA015E3FA3A08D9CD02909E8A</hash>
+    </key>
+    <key>
+      <role>user</role>
+      <user>user1</user>
+      <hash>AB4E2B5BEFE757E443E5A5308C4CA959</hash>
+    </key>
+  </keys>
+</zend-config>

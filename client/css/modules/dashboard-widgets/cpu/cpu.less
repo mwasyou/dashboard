@@ -1,0 +1,50 @@
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.wcpu .wcpu-graph {
+    padding-left: 30px;
+}
+
+.wcpu .cpu-used {
+    margin-top: 18px;
+    margin-right: 4px;
+}
+
+.wcpu .row-fluid:first-child > div > h6 {
+    margin-top: 0;
+}
+
+.wcpu-total .wrap {
+    float: left;
+    display: block;
+    border-right: 1px solid #e9e9e9;
+    padding-right: 10px;
+}
+
+.wcpu-total > h6 {
+    margin-left: -4px;
+}
+
+.wcpu-total .progress {
+    margin: 0;
+    width: 6px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.wcpu-total .progress .bar {
+    .transition(width .1s ease-in-out);
+    background-color: #6CC5E0;
+    background-image: none;
+    filter: none;
+    width: 6px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}

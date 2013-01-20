@@ -1,0 +1,15 @@
+
+- Support for i18n (may be "i18n-2" https://github.com/jeresig/i18n-node-2)
+- Preload and minify module assets and code so they are not minified on first request when the application is running
+- Dashboard: Configuration
+- Widget prototype: Base-Frame Configaration
+- Dashboard UI: Loading mask on start up
+- Dashboard UI: Connection info (connect/disconnect)
+- Widget (CPU): Configuration
+    - Show hide total CPU Usage progress bar
+    - One graph per cpu or combined in one graph
+- Widget (Chat): Configuration
+    - Persist the messages on the server
+    - Highlight the messages mentioning a @user
+    - Show not readed messages when the user is being @mentioned
+    - Filter the messages which doesn't contain any mentions

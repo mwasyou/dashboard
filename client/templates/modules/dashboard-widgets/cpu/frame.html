@@ -1,0 +1,13 @@
+<div id="{{widget-id}}-cpu-{{number}}" class="cpu-frame {{frameclass}}">
+    <h6>CPU {{number}} <small id="{{widget-id}}-used-{{number}}" class="muted pull-right used-{{number}} cpu-used">(100%)</small></h6>
+    <div class="wcpu-graph wcpu-graph-{{number}}">graph</div>
+</div>
+<script type="text/javascript">
+    var resizeCPUFrames = function() {
+        $('#{{widget-id}} .wcpu-graph').each(function() {
+            $(this).height($(this).width());
+        });
+    };
+    $(window).on("debouncedresize", resizeCPUFrames);
+    resizeCPUFrames();
+</script>
