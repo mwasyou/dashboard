@@ -1,6 +1,6 @@
 {
-  "name": "ss-boilerplate",
-  "description": "SocketStream Boilerplate",
+  "name": "nc-dashboard",
+  "description": "NodeCollab Dashboard",
   "version": "0.0.1",
   "author": {
     "name": "Krasen Borisov",
